@@ -82,6 +82,11 @@
 }
 #events-list{
 	background: #eee;
+	margin: -1em 0 2em;
+	
+	.row{
+		margin-bottom: 2em;
+	}
 	
 }
 .event-date{
@@ -89,14 +94,22 @@
 	color: #fff;
 	font-weight: bold;
 	margin: 0;
-	padding: 0;
+	padding: 1em 0;
+	display: block;
 }
 
 p.event-description{
 	
 }
 
-
+#footer-text{
+	text-align: center;
+	
+	a{
+		color: #fff;
+	}
+	
+}
 
 @media only screen and (min-width: 30em) and (max-width: 48em){
 #welcome{
@@ -111,8 +124,8 @@ p.event-description{
 	}
 }
 
-}
 
+}
 
 
 @media only screen and (min-width: 48em) {
@@ -152,6 +165,9 @@ p.event-description{
 	}
 }
 
+#footer-text{
+	text-align: right;
+}
 
 
 }
