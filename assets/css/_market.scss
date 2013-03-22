@@ -1,0 +1,53 @@
+#market{
+
+	margin-bottom: 1.6rem;
+
+	.row{
+		background: $lt;
+	}
+
+}
+
+#fresh{
+	background: $lt;
+	margin: 2rem auto;
+	
+	ul{
+		text-align: left;
+		list-style-type: none;
+	}
+
+
+}
+
+#products{
+	
+	ul{
+		list-style-position: inside;
+		list-style-type: none;
+
+	}
+	
+	li{
+		margin-left: 10px;
+	}
+	
+	.sidebar{
+		margin-top:1.6em;
+		
+		img{
+			margin-bottom: 15px;
+		}
+		
+		a.button{
+			display: block;
+		}
+		
+	}
+	
+}
+
+.sidebar>.row{
+	margin-bottom: 1rem;
+	background: $lt;
+}
