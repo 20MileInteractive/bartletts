@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bartlett's Farm | Fresh Nantucket Grown Vegetables</title>
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/vendor/normalize.css'>
+  <link rel='stylesheet' href='assets/css/styles.css'>
+
+  <script src='assets/js/vendor/custom.modernizr.js'></script>
+
+</head>
+<body>
+<a id="top"></a>
+<div class="row" id="masthead">
+	<div class="large-12 columns">
+		<a href="index.html"><img id="header-logo" src="http://placehold.it/125x125&text=LOGO" /></a>
+		<a href="index.html"><h1>Bartlett's Farm</h1></a>
+	</div>
+</div>
+
+<div class="row">		
+	<div class="large-12 columns">
+		<nav id="main-nav" class="top-bar">
+		  <ul class="title-area">
+		  	<!-- Title Area -->
+			   <li class="name">
+			   </li>
+			   <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+			   <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
+			
+		  <section class="top-bar-section">
+		    <!-- Left Nav Section -->
+		    <ul class="right">
+		      <li class="divider"></li>
+		      <li><a href="#">Online Store</a></li>
+		      <li class="divider"></li>
+		      <li class='current'><a class='current' href="market.html">Market</a></li>
+		      <li class="divider"></li>
+		      <li><a href="#">Prepared Foods</a></li>
+		      <li class="divider"></li>
+		      <li><a href="#">Garden Center</a></li>
+		      <li class="divider"></li>
+		      <li><a href="#">Events</a></li>      
+		      <li class="divider"></li>
+		      <li class="has-dropdown"><a href="#">About The Farm</a>
+		  
+		        <ul class="dropdown">
+		          <li><a href="#">History of the Farm</a></li>
+		          <li><a href="#">Fields</a></li>
+		          <li><a href="#">Greenhouse</a></li>
+		          <li><a href="#">Mission</a></li>
+		          <li><a href="#">Friend of the Farm</a></li>
+		        </ul>
+		      </li>
+		      <li class="divider"></li>
+		      <li><a href="#">Employment</a></li>      
+		      <li class="divider"></li>
+		      <li><a href="#">Contact Us</a></li>      
+		      <li class="divider"></li>
+		    </ul>
+		   </section>
+		 </nav>
+	</div>	
+</div>
+
+
+<div id="market">
+	<div class="row">
+
+		<div class="large-8 push-4 columns">
+			<img src="http://placehold.it/800x500&text=Photo"/>
+		</div>
+
+		<div class="large-4 pull-8 columns">
+			<h2>The Market at Bartlett's Farm</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.
+			</p>
+
+		</div>
+
+	</div>
+
+</div><!-- end market -->
+
+
+<div>
+	<div id="products" class="row">
+		<div  class="large-7 columns">
+			<h5>What We Carry</h5>
+			<fieldset>
+				<legend>Produce</legend>
+					<section class="row">
+						<ul class="small-6 columns">
+							<li class="fresh">Product Name</li>
+							<li>Product Name</li>
+							<li class="fresh">Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+							<li class="fresh organic">Product Name</li>
+						</ul>
+						<ul class="small-6 columns">
+							<li class="fresh organic">Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+						</ul>
+					</section>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Other Category</legend>
+					<section class="row">
+						<ul class="small-6 columns">
+							<li class="fresh">Product Name</li>
+							<li>Product Name</li>
+							<li class="fresh">Product Name</li>
+						</ul>
+						<ul class="small-6 columns">
+							<li class="fresh organic">Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+						</ul>
+					</section>
+			</fieldset>
+
+			<fieldset>
+				<legend>Other Category</legend>
+					<section class="row">
+						<ul class="small-6 columns">
+							<li class="fresh">Product Name</li>
+							<li>Product Name</li>
+							<li class="fresh">Product Name</li>
+						</ul>
+						<ul class="small-6 columns">
+							<li class="fresh organic">Product Name</li>
+							<li>Product Name</li>
+							<li>Product Name</li>
+						</ul>
+					</section>
+			</fieldset>
+			
+		</div>
+		
+		<div class="sidebar large-4 push-1 columns">
+			<div class="row">
+				
+				<div class="large-12 columns">
+					<h5>What's In Season Now</h5>
+					<img src="http://placehold.it/600x300&text=Produce+Photo"/>
+					
+					<div class="row">
+						<ul class="small-6 columns">
+							<li>Chives</li>
+							<li>Cilantro</li>
+							<li>Italian Parsley</li>			
+							<li>Lettuce</li>
+						</ul>
+						<ul class="small-6 columns">
+							<li>Mint</li>
+							<li>Parsley</li>
+							<li>Radishes</li>
+						</ul>
+					</div>
+				
+				</div>
+			
+			</div>
+			<div class="row">
+			<div class="large-12 columns">
+					<h5>Favorite Recipes</h5>
+					<p>
+						<a href="">Red Quinoa and Farro Salad with Citrus and Ventresca</a>
+					</p>
+					<p>
+						<a href="">Risotto with Roasted Winter Vegetables</a>
+					</p>
+					<p><a class="button">See All Our Recipes</a></p>
+			</div>		
+		
+		</div>
+
+
+
+		
+	</div>
+
+</div><!-- end "products" -->
+
+    <script src='assets/js/vendor/jquery.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.alerts.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.clearing.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.cookie.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.dropdown.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.forms.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.joyride.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.magellan.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.orbit.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.placeholder.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.reveal.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.section.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.tooltips.js'></script>
+    <script src='assets/js/vendor/foundation/foundation.topbar.js'></script>
+	<script src='assets/js/script.js'></script>
+</body>
+</html>
