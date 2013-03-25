@@ -1166,7 +1166,7 @@ blockquote p {
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
@@ -1188,7 +1188,7 @@ blockquote p {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid; }
 
   thead {
@@ -2605,7 +2605,7 @@ form.custom {
       right: 0px;
       width: 11px;
       height: 14px;
-      border: solid 4px #000;
+      border: solid 4px black;
       border-top: none;
       border-bottom: none; }
     .orbit-container .orbit-timer.paused > span {
@@ -2614,7 +2614,7 @@ form.custom {
       width: 11px;
       height: 14px;
       border: solid 8px;
-      border-color: transparent transparent transparent #000; }
+      border-color: transparent transparent transparent black; }
   .orbit-container:hover .orbit-timer > span {
     display: block; }
   .orbit-container .orbit-prev,
@@ -2641,17 +2641,17 @@ form.custom {
   .orbit-container .orbit-prev {
     left: 0; }
     .orbit-container .orbit-prev > span {
-      border-color: transparent #fff transparent transparent; }
+      border-color: transparent white transparent transparent; }
     .orbit-container .orbit-prev:hover > span {
-      border-color: transparent #ccc transparent transparent; }
+      border-color: transparent #cccccc transparent transparent; }
   .orbit-container .orbit-next {
     right: 0; }
     .orbit-container .orbit-next > span {
-      border-color: transparent transparent transparent #fff;
+      border-color: transparent transparent transparent white;
       left: 50%;
       margin-left: -8px; }
     .orbit-container .orbit-next:hover > span {
-      border-color: transparent transparent transparent #ccc; }
+      border-color: transparent transparent transparent #cccccc; }
 
 .orbit-bullets {
   margin: 0 auto 30px auto;
@@ -2665,7 +2665,7 @@ form.custom {
     background: #fff;
     float: left;
     margin-right: 6px;
-    border: solid 2px #000;
+    border: solid 2px black;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
     .orbit-bullets li.active {
@@ -2845,9 +2845,9 @@ form.custom {
   text-decoration: none;
   font-size: 30px;
   font-weight: normal;
-  line-height: .5 !important; }
+  line-height: 0.5 !important; }
   .joyride-close-tip:hover, .joyride-close-tip:focus {
-    color: #eee !important; }
+    color: #eeeeee !important; }
 
 .joyride-modal-bg {
   position: fixed;
@@ -3795,6 +3795,27 @@ table {
 .sidebar > .row {
   margin-bottom: 1rem;
   background: #eeeeee; }
+
+#kitchen .row {
+  background: #eeeeee; }
+#kitchen ul {
+  list-style-position: inside; }
+#kitchen h5 {
+  border-bottom: 1px solid #999999; }
+#kitchen #date {
+  margin-top: -.6rem; }
+  #kitchen #date a {
+    font-size: .85rem;
+    margin-left: 5px; }
+
+#catering {
+  margin: 2rem auto; }
+  #catering .row {
+    background: #eeeeee; }
+  #catering div:first-child {
+    background: #eeeeee; }
+  #catering div:last-child {
+    background: #999999; }
 
 #header-logo {
   margin: 0 0;

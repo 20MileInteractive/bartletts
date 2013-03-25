@@ -1,0 +1,41 @@
+#kitchen{
+	.row{background: $lt;
+	}
+	
+	ul{
+		list-style-position: inside;
+	}
+	
+	h5{
+		border-bottom: 1px solid $md;
+	}
+	
+	#date{
+		margin-top:-.6rem;
+				
+		a{
+		font-size: .85rem;
+		margin-left: 5px;
+		}
+	}
+
+
+}
+
+
+#catering{
+	margin:2rem auto;
+
+	.row{
+		background: $lt;
+	
+	}
+
+	div:first-child{
+		background: $lt;
+	}
+	
+	div:last-child{
+		background: $md;
+	}
+}
