@@ -64,12 +64,20 @@
 
 </head>
 <body>
+
 <a id="top"></a>
 <div class="row" id="masthead">
-	<div class="large-12 columns">
+	<div class="large-8 small-6 columns">
 		<a href="index.html"><img id="header-logo" src="http://placehold.it/125x125&text=LOGO" /></a>
 		<a href="index.html"><h1>Bartlett's Farm</h1></a>
 	</div>
+
+	<div id="header-cart" class="large-4 small-6 columns">
+		<a href="cart.html" class="button small">Your Cart</a><br/>
+		508-228-9403
+	</div>
+
+	
 </div>
 
 <div class="row">		
@@ -87,15 +95,21 @@
 		    <!-- Left Nav Section -->
 		    <ul class="right">
 		      <li class="divider"></li>
-		      <li><a href="#">Online Store</a></li>
-		      <li class="divider"></li>
-		      <li><a href="market.html">Market</a></li>
-		      <li class="divider"></li>
-		      <li class='current'><a class='current' href="prepared-foods.html">Prepared Foods</a></li>
+		      <li class="has-dropdown"><a href="#">Food &amp; Sundries</a>		  
+		        <ul class="dropdown">
+		          <li><a href="market.html">Market</a></li>
+		          <li class='current'><a class='current' href="prepared-foods.html">Prepared Foods</a></li>
+		          <li><a href="catering.html">Catering</a></li>
+		          <li><a href="recipes.html">Recipes</a></li>
+		          <li><a href="shop-online.html">Shop Online</a></li>
+
+		        </ul>
+		      </li>
+		      
 		      <li class="divider"></li>
 		      <li><a href="#">Garden Center</a></li>
 		      <li class="divider"></li>
-		      <li><a href="#">Events</a></li>      
+		      <li><a href="events.html">Events</a></li>      
 		      <li class="divider"></li>
 		      <li class="has-dropdown"><a href="#">About The Farm</a>
 		  
@@ -119,11 +133,23 @@
 </div>
 
 
+<div class="row">
+	<h2 class="large-12 columns">Prepared Foods From Bartlett's Farm</h2>
+</div>
+<div class="row">
+	<p class="large-6 columns">
+	Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
+	</p>
+	
+	<p class="large-6 columns">
+	Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.
+	</p>
+</div>
 <div id="kitchen">
 	<div class="row">
 		<div class="large-12 columns">
-			<h3>What's Cooking In The Kitchen</h3>
-			<p id="date">Monday, April 1<a href="">See tomorrow's menu</a>
+			<h4>Fresh Prepared Food</h4>
+			<p id="date">Monday, April 8<a href="">See tomorrow's menu</a>
 			</p>
 		</div>
 	</div>
@@ -145,17 +171,58 @@
 	</div>
 </div><!-- end kitchen -->
 
-<div id="catering">
-	<div id="catering-menu" class="row">
-		<div class="large-8 columns">
-			<h5>Catering from Bartlett's Farm</h5>
+<div id="footer">	
+	<div class="row">
+		<div id="events-list" class="large-5 columns">
+			<h4>Events</h4>
+			
+			<div class="row">
+				<div class="event-date small-3 columns">
+					March 9
+				</div>
+
+				<div class="event-description small-9 columns">
+					<a href="">Maya Chase makes home and body products</a>
+				</div>
+
+			</div>
+			
+			<div class="row">
+			 	<div class="event-date small-3 columns">
+			 		March 16
+			 	</div>
+			 	<div class="event-description small-9 columns">
+			 		<a href="">Dylan Wallace- Edible Plant Design</a>
+			 	</div>
+		 </div>				
+
+			<div class="row">
+				<div class="event-date small-3 columns">
+					March 23
+				</div>
+				<div class="event-description small-9 columns">
+					<a href="">Zach Dusseau -Small scale alternative energy</a>
+				</div>
+			</div>				
+
+		</div><!-- end events list -->
+			
+		<div id="footer-text" class="large-7 columns">
+			<h5>Bartlett's Farm</h5>
+			<p>
+				33 Bartlett Farm Road<br/>
+				Nantucket, MA 02554<br/>
+				508-228-9403<br/>
+				<a href="">Contact Us</a>
+			</p>
+			<p id="top-link">
+				<a href="#top">&uarr; Back To Top</a>
+			</p>
 		</div>
-		<div id="how-to-order" class="large-4 columns">
-			test
-		</div>
-	</div>
-	
-</div><!-- end catering-->
+
+		
+	</div><!-- end footer row -->
+</div><!-- end footer -->
 
     <script src='assets/js/vendor/jquery.js'></script>
     <script src='assets/js/vendor/foundation/foundation.js'></script>

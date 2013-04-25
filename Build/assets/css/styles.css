@@ -3814,8 +3814,26 @@ table {
     background: #eeeeee; }
   #catering div:first-child {
     background: #eeeeee; }
-  #catering div:last-child {
-    background: #999999; }
+
+#catering-menus .large-12 {
+  margin-top: 3rem auto; }
+
+#recipes {
+  background: #eee;
+  padding: 2rem 0; }
+  #recipes span.recipe-icon {
+    float: right; }
+
+.product-listing {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem; }
+
+div.price {
+  text-align: right; }
+
+div#events h3 {
+  border-bottom: 1px solid #ddd; }
 
 .style-guide section {
   padding: 1em 0; }
@@ -3920,15 +3938,17 @@ footer p {
   z-index: 100;
   position: relative; }
 
-#masthead h1 {
-  display: none; }
+#masthead {
+  margin-top: 1rem; }
+  #masthead h1 {
+    display: none; }
 
 #hero-photo {
   margin: 0 auto;
   display: block; }
 
-#main-nav {
-  margin-top: -45px; }
+#header-cart {
+  text-align: right; }
 
 #welcome {
   background: #333;
@@ -3961,7 +3981,8 @@ footer p {
     margin: 15px 0; }
 
 #footer {
-  background: #999; }
+  background: #999;
+  margin-top: 5rem; }
 
 #events-list {
   background: #eee;
