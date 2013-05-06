@@ -3783,7 +3783,9 @@ body {
 .top-bar {
   margin-bottom: 0;
   background: white url(../img/bg2.jpg);
-  background: rgba(255, 255, 255, 0.15) url(../img/bg2.jpg); }
+  background: rgba(255, 255, 255, 0.15) url(../img/bg2.jpg);
+  font-family: TrendSlabOne, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 0.8125em; }
   .top-bar section li a:not(.button) {
     background: white url(../img/bg2.jpg);
     background: rgba(255, 255, 255, 0.15) url(../img/bg2.jpg); }

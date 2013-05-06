@@ -24,6 +24,8 @@ body {
 	margin-bottom: 0;
 	background: rgb(255,255,255) url(../img/bg2.jpg);
 	background: rgba(255,255,255,0.15) url(../img/bg2.jpg);
+	font-family: $header-font-family;
+	font-size: emCalc(13px);
 
 	section li a:not(.button) {
 		background: rgb(255,255,255) url(../img/bg2.jpg);
