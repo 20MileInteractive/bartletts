@@ -1,11 +1,34 @@
 // Base style sheet
 
+
+
 .text-center{
 	text-align: center;
 }
 
 body {
 	background: url(../img/bg.jpg);
+}
+
+.ico {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -999em;
+	background: url(../img/sprite.png) no-repeat 0 0;
+}
+
+.link-list {
+	list-style-type: none;
+
+	li {
+		list-style-type: none;
+		background: url(../img/bg2.jpg);
+		border-radius: 3px;
+		padding: .5em 1em;
+		margin-bottom: .5em;
+
+		a {font-family: $header-font-family;}
+	}
 }
 
 #header-logo{
@@ -58,10 +81,19 @@ body {
 	text-align: right;
 	font-family: $header-font-family;
 	font-size: .875em;
-	color: rgb(73, 63, 52);
+	line-height: 2em;
 
-	a {color: rgb(73, 63, 52);}
-	a:hover {color: #D33C1A;}
+	a {color: $body-font-color;}
+	a:hover {color: $primary-color;}
+
+	.basket {
+		width: 32px; height: 25px;
+		margin-right: .5em;
+		background-position: 0 2px;
+	}
+	.basket.full {
+		background-position: 0 -34px;
+	}
 }
 
 
@@ -69,6 +101,7 @@ body {
 	background: #333 url(../img/callout-bg.png);
 	color: #EEE5C2;
 	padding: .25em;
+	margin-bottom: 3em;
 
 	#welcome-inner {
 		border: 3px solid #D33C1A;
@@ -79,7 +112,7 @@ body {
 	h4 {
 		color: #79CF19; 
 		font-weight: normal;
-		font-size: 1em;
+		font-size: emCalc(13px);
 		text-align: center;
 		margin-bottom: 1em;
 	}
