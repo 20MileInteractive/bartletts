@@ -22,20 +22,30 @@ body {
 
 .top-bar {
 	margin-bottom: 0;
-	background: rgb(255,255,255) url(../img/bg2.jpg);
-	background: rgba(255,255,255,0.15) url(../img/bg2.jpg);
+	background: url(../img/bg2.jpg);
 	font-family: $header-font-family;
 	font-size: emCalc(13px);
 
-	section li a:not(.button) {
-		background: rgb(255,255,255) url(../img/bg2.jpg);
-		background: rgba(255,255,255,0.15) url(../img/bg2.jpg);
+	section li  {
+		background: url(../img/bg2.jpg);
+		background: url(../img/bg2.jpg);
 	}
 }
 
-.top-bar-section li a:not(.button):hover {
-	background: #243F05;
-	color: #fff;
+.top-bar-section {
+	
+	li a:not(.button) {background: transparent;} 
+	li a:not(.button):hover {
+		font-weight: normal;
+		background: #B6B081;
+		background: rgba(73, 63, 52, 0.18);
+	}
+	ul li > a {background: transparent;}
+}
+
+.top-bar-section li a:not(.button),
+.top-bar-section ul li > a {
+	background: transparent;
 }
 
 #hero-photo{
@@ -46,28 +56,48 @@ body {
 
 #header-cart{
 	text-align: right;
+	font-family: $header-font-family;
+	font-size: .875em;
+	color: rgb(73, 63, 52);
+
+	a {color: rgb(73, 63, 52);}
+	a:hover {color: #D33C1A;}
 }
 
 
 #welcome{
-	background: #333;
-	color: #fff;
+	background: #333 url(../img/callout-bg.png);
+	color: #EEE5C2;
+	padding: .25em;
+
+	#welcome-inner {
+		border: 3px solid #D33C1A;
+		padding: emCalc(20px) emCalc(8px) emCalc(8px);
+	}
 	
-	h5{
-		color: #fff;
+	h3{text-align: center;}
+	h4 {
+		color: #79CF19; 
+		font-weight: normal;
+		font-size: 1em;
 		text-align: center;
+		margin-bottom: 1em;
 	}
 	
 	p{
 		margin: 0;
 	}
 	
-	p.special{
-	background:#222;
-	padding: .3rem;
-	margin: 5px 0;
+	ul {margin: .5em 0 0;}
 
-}
+	li {
+	background:rgb(73,59,46);
+	background:rgba(0,0,0,0.15);
+	padding: .5rem;
+	margin: 5px 0;
+	list-style-type: none;
+	text-align: center;
+	}
 }
 
 
