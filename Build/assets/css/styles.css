@@ -3870,24 +3870,34 @@ body {
 
 #farm-fresh {
   margin: 2em auto; }
+  #farm-fresh h3 {
+    font-size: 1em;
+    color: #78614c; }
   #farm-fresh #tomato {
     -webkit-transform: rotate(-7deg);
     float: left;
-    margin: 15px 15px 15px 0; }
-  #farm-fresh a {
-    display: inline-block;
-    margin: 1em 0 0 0;
-    clear: left; }
+    margin: 0 2em 2em 0; }
 
 #faq {
-  background: #eee;
-  margin: 4em auto; }
+  background: #eeeeee url(../img/bg2.jpg);
+  margin: 4em auto 0;
+  padding-bottom: 4em; }
+  #faq h3 {
+    margin-top: -40px;
+    margin-bottom: 0;
+    line-height: 1; }
+  #faq h4 {
+    background: url(../img/bg2.jpg);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-family: "AvenirNextLTW02-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    padding: .5em; }
   #faq img {
     margin: 15px 0; }
 
 #footer {
-  background: #999;
-  margin-top: 5rem; }
+  background: #999999 url(../img/bg3.jpg); }
 
 #events-list {
   background: #eee;
@@ -3933,6 +3943,9 @@ body {
 
   #farm-fresh a {
     margin: 0 1em 0 0; }
+
+  #faq h3 {
+    margin-top: -50px; }
 
   #footer-text {
     text-align: right; } }

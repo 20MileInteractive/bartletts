@@ -138,25 +138,48 @@ body {
 #farm-fresh{
 
 	margin: 2em auto;
+
+	h3 {
+		font-size: emCalc(16px);
+		color: lighten($body-font-color, 15%);
+	}
 	
 	#tomato{
 		-webkit-transform:rotate(-7deg);
 		float:left;
-		margin: 15px 15px 15px 0;
+		margin: 0 2em 2em 0;
 	}
 	
-	a{
-		display: inline-block;
-		margin: 1em 0 0 0;
-		clear: left;
-	}
+	// a{
+	// 	display: inline-block;
+	// 	margin: 1em 0 0 0;
+	// 	clear: left;
+	// }
 }
 
 
 #faq{
-	background: #eee;
-	margin: 4em auto;
+	background: #eee url(../img/bg2.jpg);
+	margin: 4em auto 0;
+	padding-bottom: 4em;
+
 	
+	h3 {
+		margin-top: -40px;
+		margin-bottom: 0;
+		line-height: 1;
+	}
+
+	h4 {
+		background: url(../img/bg2.jpg);
+		// color: #E3CD6A;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius: 5px;
+		font-family: $body-font-family;
+		padding: .5em;
+	}
+
 	img{
 			margin: 15px 0;
 	}
@@ -164,8 +187,7 @@ body {
 
 
 #footer{
-	background: #999;
-	margin-top: 5rem;
+	background: #999 url(../img/bg3.jpg);
 }
 #events-list{
 	background: #eee;
@@ -211,7 +233,6 @@ p.event-description{
 	}
 }
 
-
 }
 
 
@@ -251,6 +272,8 @@ p.event-description{
 
 	}
 }
+
+#faq h3 {margin-top: -50px;}
 
 #footer-text{
 	text-align: right;
