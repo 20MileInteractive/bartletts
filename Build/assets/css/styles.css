@@ -1141,7 +1141,7 @@ blockquote p {
 
 @media only screen and (min-width: 48em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1; }
+    line-height: 1em; }
 
   h1 {
     font-size: 2.75em; }
@@ -2110,11 +2110,11 @@ form.custom {
   width: 100%;
   display: block;
   margin-bottom: 1.25em;
-  border: 1px solid #cccccc;
+  border: 1px solid white;
   border-top: none; }
   .section-container section,
   .section-container .section {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid white;
     position: relative; }
     .section-container section .title,
     .section-container .section .title {
@@ -2127,7 +2127,7 @@ form.custom {
       .section-container .section .title a {
         padding: 0.9375em;
         display: inline-block;
-        color: #333333;
+        color: #493b2e;
         font-size: 0.875em;
         white-space: nowrap;
         width: 100%; }
@@ -2138,7 +2138,7 @@ form.custom {
     .section-container .section .content {
       display: none;
       padding: 0.9375em;
-      background-color: white; }
+      background-color: transparent; }
       .section-container section .content > *:last-child,
       .section-container .section .content > *:last-child {
         margin-bottom: 0; }
@@ -2153,7 +2153,7 @@ form.custom {
       display: block; }
     .section-container section.active .title,
     .section-container .section.active .title {
-      background: #d5d5d5; }
+      background: white; }
 
 .section-container.tabs {
   border: 0;
@@ -2166,7 +2166,7 @@ form.custom {
     .section-container.tabs section .title,
     .section-container.tabs .section .title {
       width: auto;
-      border: 1px solid #cccccc;
+      border: 1px solid white;
       border-right: 0;
       border-bottom: 0;
       position: absolute;
@@ -2176,10 +2176,10 @@ form.custom {
         width: 100%; }
     .section-container.tabs section:last-child .title,
     .section-container.tabs .section:last-child .title {
-      border-right: 1px solid #cccccc; }
+      border-right: 1px solid white; }
     .section-container.tabs section .content,
     .section-container.tabs .section .content {
-      border: 1px solid #cccccc;
+      border: 1px solid white;
       position: absolute;
       z-index: 10;
       top: -1px; }
@@ -2197,7 +2197,7 @@ form.custom {
     padding-top: 0 !important; }
 
   .section-container.vertical-nav {
-    border: 1px solid #cccccc;
+    border: 1px solid white;
     border-top: none; }
     .section-container.vertical-nav section,
     .section-container.vertical-nav .section {
@@ -2217,12 +2217,12 @@ form.custom {
         top: -1px;
         z-index: 999;
         min-width: 12.5em;
-        border: 1px solid #cccccc; }
+        border: 1px solid white; }
 
   .section-container.horizontal-nav {
     position: relative;
     background: #efefef;
-    border: 1px solid #cccccc; }
+    border: 1px solid white; }
     .section-container.horizontal-nav section,
     .section-container.horizontal-nav .section {
       padding-top: 0;
@@ -2231,7 +2231,7 @@ form.custom {
       .section-container.horizontal-nav section .title,
       .section-container.horizontal-nav .section .title {
         width: auto;
-        border: 1px solid #cccccc;
+        border: 1px solid white;
         border-left: 0;
         top: -1px;
         position: absolute;
@@ -2250,7 +2250,7 @@ form.custom {
         left: 0;
         top: -2px;
         min-width: 12.5em;
-        border: 1px solid #cccccc; } }
+        border: 1px solid white; } }
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
@@ -3620,8 +3620,8 @@ table {
 .has-tip {
   border-bottom: dotted 1px #cccccc;
   cursor: help;
-  font-weight: bold;
-  color: #333333; }
+  font-weight: normal;
+  color: #eee5c2; }
   .has-tip:hover, .has-tip:focus {
     border-bottom: dotted 1px #78220f;
     color: #d33c1a; }
@@ -3771,6 +3771,12 @@ table {
 body {
   background: url(../img/paper1.jpg); }
 
+h2, h3, h4, h5, h6 {
+  line-height: 1em; }
+
+h2 {
+  margin: 1em 0; }
+
 .ico {
   display: inline-block;
   overflow: hidden;
@@ -3811,6 +3817,9 @@ body {
   .top-bar section li {
     background: url(../img/paper2.jpg); }
 
+.top-bar.expanded .title-area {
+  background: url(../img/paper3.jpg); }
+
 .top-bar-section li a:not(.button) {
   background: transparent; }
 .top-bar-section li a:not(.button):hover {
@@ -3823,6 +3832,24 @@ body {
 .top-bar-section li a:not(.button),
 .top-bar-section ul li > a {
   background: transparent; }
+
+.section-container {
+  border: 0 none; }
+
+.section-container section .title, .section-container .section .title {
+  background-color: transparent;
+  background-image: -o-linear-gradient(-90deg, rgba(250, 250, 250, 0.3) 0%, rgba(230, 230, 230, 0.3) 100%);
+  background-image: -moz-linear-gradient(-90deg, rgba(250, 250, 250, 0.3) 0%, rgba(230, 230, 230, 0.3) 100%);
+  background-image: -webkit-linear-gradient(-90deg, rgba(250, 250, 250, 0.3) 0%, rgba(230, 230, 230, 0.3) 100%);
+  background-image: -ms-linear-gradient(-90deg, rgba(250, 250, 250, 0.3) 0%, rgba(230, 230, 230, 0.3) 100%);
+  background-image: linear, -180deg, rgba(250, 250, 250, 0.3) 0%, rgba(230, 230, 230, 0.3) 100%;
+  font-family: TrendSlabOne, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+.section-container section .title:hover, .section-container .section .title:hover {
+  background: #fff; }
+
+.section-container section .title a, .section-container .section .title a {
+  white-space: normal; }
 
 #hero-photo {
   margin: 0 auto;
@@ -3849,27 +3876,33 @@ body {
   margin-bottom: 1rem;
   background: url(../img/paper2.jpg); }
 
-#welcome {
+.sidebar h5 {
+  margin-top: 1em; }
+
+#welcome, #kitchen .callout {
+  padding: .25em; }
+
+.callout {
   background: url(../img/callout-bg.png);
   color: #eee5c2;
-  padding: .25em;
   margin-bottom: 3em; }
-  #welcome #welcome-inner {
+  .callout .callout-inner {
     border: 3px solid #D33C1A;
     padding: 1.25em 0.5em 0.5em; }
-  #welcome h3 {
-    text-align: center; }
-  #welcome h4 {
+  .callout h3 {
+    text-align: center;
+    color: #eee5c2; }
+  .callout h4 {
     color: #7BB623;
     font-weight: normal;
     font-size: 0.8125em;
     text-align: center;
     margin-bottom: 1em; }
-  #welcome p {
+  .callout p {
     margin: 0; }
-  #welcome ul {
+  .callout ul {
     margin: .5em 0 0; }
-  #welcome li {
+  .callout li {
     background: #493b2e;
     background: rgba(0, 0, 0, 0.15);
     padding: .5rem;
@@ -3892,7 +3925,7 @@ body {
 #faq {
   background: url(../img/paper2.jpg);
   margin: 4em auto 0;
-  padding-bottom: 4em; }
+  padding-bottom: 2em; }
   #faq h3 {
     margin-top: -36px;
     margin-bottom: .5em;
@@ -3918,6 +3951,10 @@ body {
     margin-bottom: 1em; }
   #faq dd {
     background: url(../img/a.png) no-repeat 0 0.5em; }
+
+#subfoot {
+  background: url(../img/paper2.jpg);
+  padding: 1em 0; }
 
 #footer {
   background: url(../img/paper3.jpg); }
@@ -3990,6 +4027,8 @@ body {
     text-align: right; } }
 #market {
   margin-bottom: 1.6rem; }
+  #market h3 {
+    margin-top: 1em; }
 
 #fresh {
   background: #eeeeee;
@@ -4010,14 +4049,14 @@ body {
   #products .sidebar a.button {
     display: block; }
 
-#kitchen .row {
-  background: #eeeeee; }
 #kitchen ul {
   list-style-position: inside; }
 #kitchen h5 {
   border-bottom: 1px solid #999999; }
 #kitchen #date {
-  margin-top: -.6rem; }
+  margin-top: -.6rem;
+  text-align: center;
+  margin-bottom: 1em; }
   #kitchen #date a {
     font-size: .85rem;
     margin-left: 5px; }
