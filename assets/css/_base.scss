@@ -1,13 +1,21 @@
 // Base style sheet
 
+$background1: url(../img/paper1.jpg);
+$background2: url(../img/paper2.jpg);
+$background3: url(../img/paper3.jpg);
+$background4: url(../img/bg-green.jpg);
+$background5: url(../img/bg3.jpg);
+$callout-bg: url(../img/callout-bg.png);
 
+$light-font-color: #EEE5C2; //cream
+$font-color-two: #3E7300; //grass green
 
 .text-center{
 	text-align: center;
 }
 
 body {
-	background: url(../img/bg.jpg);
+	background: $background1;
 }
 
 .ico {
@@ -22,12 +30,20 @@ body {
 
 	li {
 		list-style-type: none;
-		background: url(../img/bg2.jpg);
+		background: $background2;
 		border-radius: 3px;
 		padding: .5em 1em;
 		margin-bottom: .5em;
+		font-size: .875em;
 
 		a {font-family: $header-font-family;}
+	}
+
+	li:hover {
+		background: $background3;
+		cursor: pointer;
+
+		a {color: $light-font-color;}
 	}
 }
 
@@ -45,13 +61,12 @@ body {
 
 .top-bar {
 	margin-bottom: 0;
-	background: url(../img/bg2.jpg);
+	background: $background2;
 	font-family: $header-font-family;
 	font-size: emCalc(13px);
 
 	section li  {
-		background: url(../img/bg2.jpg);
-		background: url(../img/bg2.jpg);
+		background: $background2;
 	}
 }
 
@@ -98,8 +113,8 @@ body {
 
 
 #welcome{
-	background: #333 url(../img/callout-bg.png);
-	color: #EEE5C2;
+	background: $callout-bg;
+	color: $light-font-color;
 	padding: .25em;
 	margin-bottom: 3em;
 
@@ -110,7 +125,7 @@ body {
 	
 	h3{text-align: center;}
 	h4 {
-		color: #79CF19; 
+		color: #7BB623; 
 		font-weight: normal;
 		font-size: emCalc(13px);
 		text-align: center;
@@ -143,6 +158,8 @@ body {
 		font-size: emCalc(16px);
 		color: lighten($body-font-color, 15%);
 	}
+
+	h3, h4 {line-height: 1.2em;}
 	
 	#tomato{
 		-webkit-transform:rotate(-7deg);
@@ -159,52 +176,72 @@ body {
 
 
 #faq{
-	background: #eee url(../img/bg2.jpg);
+	background: $background2;
 	margin: 4em auto 0;
 	padding-bottom: 4em;
 
 	
 	h3 {
-		margin-top: -40px;
-		margin-bottom: 0;
+		margin-top: -36px;
+		margin-bottom: .5em;
 		line-height: 1;
+		width: 320px;
 	}
 
 	h4 {
-		background: url(../img/bg2.jpg);
-		// color: #E3CD6A;
-		-moz-border-radius:5px;
-		-webkit-border-radius:5px;
-		border-radius: 5px;
 		font-family: $body-font-family;
-		padding: .5em;
+		margin: 0;
+		line-height: 1.5em;
 	}
 
-	img{
-			margin: 15px 0;
+	dt,
+	dd {
+		padding-left: 4em;
+
+		.qna-inner {
+			background: rgb(219,208,190);
+			background: rgba(255,255,255,0.2);
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			border-radius: 5px;
+			padding: 1em;
+		}
 	}
+
+	dt {
+		background: url(.../img/q.png) no-repeat .5em .5em;
+		margin-bottom: 1em;
+	}
+
+	dd {
+		background: url(.../img/a.png) no-repeat 0 .5em;
+	}
+
 }
 
 
 #footer{
-	background: #999 url(../img/bg3.jpg);
+	background: $background3;
 }
 #events-list{
-	background: #eee;
+	background: $background1;
 	margin: -1em 0 2em;
 	
 	.row{
 		margin-bottom: 2em;
 	}
+
+	h4 {
+		margin: 1em 0 1em 1em;
+	}
 	
 }
 .event-date{
-	background: #333;
-	color: #fff;
-	font-weight: bold;
+	background: $background2;
 	margin: 0;
 	padding: 1em 0;
 	display: block;
+	border-radius: 0 3px 3px 0;
 }
 
 p.event-description{
@@ -212,10 +249,14 @@ p.event-description{
 }
 
 #footer-text{
+	background: url(../img/wind_turbine.png) no-repeat 100% 100%;
 	text-align: center;
-	
+	color: rgb(211, 199, 164);
+
+	h5 {color: rgb(218, 187, 90);}
+
 	a{
-		color: #fff;
+		color: rgb(218, 187, 90);
 	}
 	
 }
@@ -267,15 +308,17 @@ p.event-description{
 
 
 #farm-fresh{
-	a{
-				margin: 0 1em 0 0;
-
-	}
+	a{margin: 0 1em 0 0;}
+	h3, h4 {line-height: 1em;}
 }
 
-#faq h3 {margin-top: -50px;}
+#faq { 
+	h3 {margin-top: -30px;}
+	h4 {line-height: 1em;}
+}
 
 #footer-text{
+	padding: 2em 5em 2em 0;
 	text-align: right;
 }
 

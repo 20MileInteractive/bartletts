@@ -16,7 +16,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
    $body-font-color: #493B2E;
- $body-font-family: "AvenirNextLTW02-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+   $body-font-family: "AvenirNextLTW02-Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -961,7 +961,7 @@
 // Set the link colors and styles for top-level nav
    $topbar-link-color: #243F05;
    $topbar-link-weight: normal;
-   $topbar-link-font-size: 1em;
+   $topbar-link-font-size: .875em;
 
 // Style the top bar dropdown elements
    $topbar-dropdown-bg:  rgba(255,255,255,0.15);
