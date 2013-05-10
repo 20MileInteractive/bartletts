@@ -227,6 +227,11 @@ body {
 #footer{
 	background: $background3;
 }
+
+#footer > .row {
+	background: url(../img/wind_turbine.png) no-repeat 91% 100%;
+}
+
 #events-list{
 	background: $background1;
 	margin: -1em 0 2em;
@@ -253,7 +258,6 @@ p.event-description{
 }
 
 #footer-text{
-	background: url(../img/wind_turbine.png) no-repeat 100% 100%;
 	text-align: center;
 	color: rgb(211, 199, 164);
 
@@ -276,6 +280,11 @@ p.event-description{
 	p.special+p.special{
 		margin-left: 5%;
 	}
+}
+
+#footer-text{
+	padding: 2em 1em 2em 0;
+	text-align: right;
 }
 
 }
@@ -322,7 +331,7 @@ p.event-description{
 }
 
 #footer-text{
-	padding: 2em 5em 2em 0;
+	padding: 2em 0;
 	text-align: right;
 }
 

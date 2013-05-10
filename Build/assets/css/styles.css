@@ -3922,6 +3922,9 @@ body {
 #footer {
   background: url(../img/paper3.jpg); }
 
+#footer > .row {
+  background: url(../img/wind_turbine.png) no-repeat 91% 100%; }
+
 #events-list {
   background: url(../img/paper1.jpg);
   margin: -1em 0 2em; }
@@ -3938,7 +3941,6 @@ body {
   border-radius: 0 3px 3px 0; }
 
 #footer-text {
-  background: url(../img/wind_turbine.png) no-repeat 100% 100%;
   text-align: center;
   color: #d3c7a4; }
   #footer-text h5 {
@@ -3951,7 +3953,11 @@ body {
     width: 45%;
     float: left; }
   #welcome p.special + p.special {
-    margin-left: 5%; } }
+    margin-left: 5%; }
+
+  #footer-text {
+    padding: 2em 1em 2em 0;
+    text-align: right; } }
 @media only screen and (min-width: 48em) {
   #main-nav {
     margin-top: 0; }
@@ -3980,7 +3986,7 @@ body {
     line-height: 1em; }
 
   #footer-text {
-    padding: 2em 5em 2em 0;
+    padding: 2em 0;
     text-align: right; } }
 #market {
   margin-bottom: 1.6rem; }
