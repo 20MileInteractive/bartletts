@@ -3845,6 +3845,10 @@ body {
   #header-cart .basket.full {
     background-position: 0 -34px; }
 
+.sidebar > .row {
+  margin-bottom: 1rem;
+  background: url(../img/paper2.jpg); }
+
 #welcome {
   background: url(../img/callout-bg.png);
   color: #eee5c2;
@@ -3999,10 +4003,6 @@ body {
     margin-bottom: 15px; }
   #products .sidebar a.button {
     display: block; }
-
-.sidebar > .row {
-  margin-bottom: 1rem;
-  background: #333333 url(../img/bg2.jpg); }
 
 #kitchen .row {
   background: #eeeeee; }
