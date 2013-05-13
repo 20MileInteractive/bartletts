@@ -4063,16 +4063,12 @@ h2 {
 
 #catering {
   margin: 2rem auto; }
-  #catering .row {
-    background: #eeeeee; }
-  #catering div:first-child {
-    background: #eeeeee; }
 
 #catering-menus .large-12 {
   margin-top: 3rem auto; }
 
 #recipes {
-  background: #eee;
+  background: url(../img/paper2.jpg);
   padding: 2rem 0; }
   #recipes span.recipe-icon {
     float: right; }
