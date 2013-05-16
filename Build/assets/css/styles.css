@@ -4073,6 +4073,9 @@ h2 {
   #recipes span.recipe-icon {
     float: right; }
 
+#recipe1 ul, #recipe1 ol {
+  list-style-position: inside; }
+
 .product-listing {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
