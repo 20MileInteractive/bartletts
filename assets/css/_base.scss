@@ -53,6 +53,19 @@ h2 {
 	}
 }
 
+.social {
+	display: inline-block;
+	width: 24px; height: 24px;
+	background: $background2;
+	vertical-align: middle;
+
+	img {vertical-align: middle;}
+}
+
+a.social:hover {
+	background: $background3;
+	}
+
 #header-logo{
 	margin: 0 0;
 	z-index: 100;

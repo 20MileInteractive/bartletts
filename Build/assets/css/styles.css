@@ -3800,6 +3800,18 @@ h2 {
     .link-list li:hover a {
       color: #eee5c2; }
 
+.social {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/paper2.jpg);
+  vertical-align: middle; }
+  .social img {
+    vertical-align: middle; }
+
+a.social:hover {
+  background: url(../img/paper3.jpg); }
+
 #header-logo {
   margin: 0 0;
   z-index: 100;
