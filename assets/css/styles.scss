@@ -64,3 +64,18 @@ width: auto;
 }
 input[type="submit"]:hover {
     background-color: #a62f14; }
+.sidebar_button {
+	background: url(../img/paper3.jpg);
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.sidebar_button:hover {
+	color: #493b2e;
+}
+.full-nav {
+	background: url(../img/paper2.jpg);
+	.top-bar {
+		background: none;
+	}
+}
