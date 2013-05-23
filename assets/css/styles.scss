@@ -20,20 +20,75 @@
 .orbit-bullets {
 	display: none;
 }
+.content_holder ul, .content_holder ol {
+	padding-left: 1.5em;
+}
+.content_holder table {
+	background: none;
+	border: none;
+	tr:nth-child(odd) {
+		background: url(../img/paper2.jpg);
+	}
+	tr:nth-child(even) {
+		background: none;
+	}
+}
+.main_img {
+	float:right; 
+	margin:0 0 10px 10px;
+	border: 6px solid #EEDAA7;
+}
 label {
-	background: #f2f2f2;
-	border: solid 1px #d9d9d9;
-	border-right: none;
-	color: #333333;
+	background: none;
+	border: none;
+	color: #493B2E;
 	float: left;
+	font-size: 1em;
 	width: 25%;
 	display: block;
-	line-height: 2.25em;
-	text-align: center;
+	line-height: 1.25em;
+	text-align: right;
+	padding: 7px 2%;
 }
-input {
+li label {
+	background: none;
+	border: none;
+	width: auto;
+	padding: 6px 0;
+	max-width: 80%;
+	text-align: left;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea, select, .line ul {
 	float: left;
 	width: 75%;
+	background: url(../img/paper2.jpg);
+	border: none;
+}
+select {
+	font-size: 0.875em;
+	height: 2.3125em;
+}
+textarea {
+	height: auto;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+	background: url(../img/paper2.jpg) !important;
+}
+input[type="radio"], input[type="checkbox"] {
+	float: left;
+	margin: 6px 5px 6px 20px;
+	vertical-align: middle;
+}
+input[type="file"] {
+	float: left;
+	margin: 6px 5px;
+	vertical-align: middle;
+}
+input[type="checkbox"] {
+	clear: left;
+}
+.line li {
+	display: inline;
 }
 input[type="submit"] {
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -47,7 +102,7 @@ cursor: pointer;
 font-family: inherit;
 font-weight: bold;
 line-height: 1;
-margin: 0 0 1.25em;
+margin: 0 0 1.25em 243px;
 position: relative;
 text-decoration: none;
 text-align: center;
@@ -65,10 +120,22 @@ width: auto;
 input[type="submit"]:hover {
     background-color: #a62f14; }
 .sidebar_button {
-	background: url(../img/paper3.jpg);
+	background: url(../img/paper2.jpg);
 	border: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
+	-webkit-border-radius: 3px;  
+    border-radius: 3px;
+    font-size: .875em;
+    color: #d33c1a;
+    font-family: TrendSlabOne, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.sidebar_button:hover {
+	background: url(../img/paper3.jpg);
+	color: #eee5c2 !important;
+}
+.panel {
+	background: url(../img/paper2.jpg);
 }
 .sidebar_button:hover {
 	color: #493b2e;
@@ -78,4 +145,18 @@ input[type="submit"]:hover {
 	.top-bar {
 		background: none;
 	}
+}
+#footer #attr {
+	float: right;
+	width: 140px;
+	a {
+	background: url(http://20miletech.com/logos/20mile-label-dark.png);
+	width: 140px;
+	height: 33px;
+	display: block;
+	vertical-align: middle;
+	span {
+		display: none;
+	}
+}
 }
