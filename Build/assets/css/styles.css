@@ -3800,6 +3800,20 @@ h2 {
     .link-list li:hover a {
       color: #eee5c2; }
 
+.cart_button {
+  background: url(../img/paper2.jpg);
+  border-radius: 3px;
+  padding: .75em 1em !important;
+  margin-bottom: .5em;
+  font-size: .875em !important;
+  font-family: TrendSlabOne, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+  border: none;
+  color: #d33c1a !important; }
+  .cart_button:hover {
+    background: url(../img/paper3.jpg);
+    cursor: pointer;
+    color: #eee5c2 !important; }
+
 .social {
   display: inline-block;
   width: 24px;
@@ -3889,7 +3903,7 @@ a.social:hover {
   background: url(../img/paper2.jpg); }
 
 .sidebar h5 {
-  margin-top: 1em; }
+  margin: 1em 0; }
 
 #welcome, #kitchen .callout {
   padding: .25em; }
@@ -3938,6 +3952,8 @@ a.social:hover {
   background: url(../img/paper2.jpg);
   margin: 4em auto 0;
   padding-bottom: 2em; }
+  #faq .section-container section {
+    border: none; }
   #faq h3 {
     margin-top: -36px;
     margin-bottom: .5em;
@@ -3966,7 +3982,8 @@ a.social:hover {
 
 #subfoot {
   background: url(../img/paper2.jpg);
-  padding: 1em 0; }
+  padding: 1em 0;
+  margin-top: 2em; }
 
 #footer {
   background: url(../img/paper3.jpg); }
@@ -3996,6 +4013,17 @@ a.social:hover {
     color: #dabb5a; }
   #footer-text a {
     color: #dabb5a; }
+
+fieldset legend {
+  background: none;
+  font-family: TrendSlabOne, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+  font-size: 1.6875em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em; }
+  fieldset legend span {
+    display: block;
+    float: right;
+    font-size: .7em; }
 
 @media only screen and (min-width: 30em) and (max-width: 48em) {
   #welcome p.special {
@@ -4216,6 +4244,11 @@ footer p {
 .main_img {
   float: right;
   margin: 0 0 10px 10px;
+  border: 6px solid #EEDAA7;
+  position: relative;
+  z-index: 1; }
+
+.boxed_img {
   border: 6px solid #EEDAA7; }
 
 label {
@@ -4229,6 +4262,9 @@ label {
   line-height: 1.25em;
   text-align: right;
   padding: 7px 2%; }
+
+#customer-info-form label {
+  clear: left; }
 
 li label {
   background: none;
@@ -4337,3 +4373,18 @@ input[type="submit"]:hover {
     vertical-align: middle; }
     #footer #attr a span {
       display: none; }
+
+.cart_list {
+  border: none;
+  background: inherit; }
+  .cart_list th {
+    background: url(../img/paper2.jpg); }
+  .cart_list .product td {
+    border-bottom: 1px solid #bc3617; }
+  .cart_list tr.even, .cart_list tr.alt, .cart_list tr:nth-of-type(even) {
+    background: url(../img/paper2.jpg); }
+
+#notreg input {
+  float: none; }
+#notreg label {
+  clear: left; }

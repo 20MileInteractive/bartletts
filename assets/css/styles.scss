@@ -37,6 +37,11 @@
 	float:right; 
 	margin:0 0 10px 10px;
 	border: 6px solid #EEDAA7;
+	position: relative;
+	z-index: 1;
+}
+.boxed_img {
+	border: 6px solid #EEDAA7;
 }
 label {
 	background: none;
@@ -49,6 +54,9 @@ label {
 	line-height: 1.25em;
 	text-align: right;
 	padding: 7px 2%;
+}
+#customer-info-form label {
+	clear: left;
 }
 li label {
 	background: none;
@@ -159,4 +167,21 @@ input[type="submit"]:hover {
 		display: none;
 	}
 }
+}
+.cart_list {
+	border: none;
+	background: inherit;
+	th { background: $background2; }
+	.product td { border-bottom: 1px solid #bc3617; }
+	tr.even, tr.alt, tr:nth-of-type(even) {
+		background: $background2;
+	}
+}
+#notreg {
+	input {
+		float:none;
+	}
+	label {
+		clear:left;
+	}
 }

@@ -52,7 +52,21 @@ h2 {
 		a {color: $light-font-color;}
 	}
 }
-
+.cart_button {
+	background: $background2;
+	border-radius: 3px;
+	padding: .75em 1em !important;
+	margin-bottom: .5em;
+	font-size: .875em !important;
+	font-family: $header-font-family !important;
+	border: none;
+	color: #d33c1a !important;
+	&:hover {
+		background: $background3;
+		cursor: pointer;
+		color: $light-font-color !important;
+	}
+}
 .social {
 	display: inline-block;
 	width: 24px; height: 24px;
@@ -159,7 +173,7 @@ background-image: linear-gradient(-180deg, rgba(250,250,250,0.30) 0%, rgba(230,2
 	background: $background2;
 }
 
-.sidebar h5 {margin-top: 1em;}
+.sidebar h5 {margin: 1em 0;}
 
 #welcome, #kitchen .callout {padding: .25em;}
 
@@ -229,7 +243,9 @@ background-image: linear-gradient(-180deg, rgba(250,250,250,0.30) 0%, rgba(230,2
 	background: $background2;
 	margin: 4em auto 0;
 	padding-bottom: 2em;
-
+	.section-container section {
+		border: none;
+	}
 	
 	h3 {
 		margin-top: -36px;
@@ -272,6 +288,7 @@ background-image: linear-gradient(-180deg, rgba(250,250,250,0.30) 0%, rgba(230,2
 #subfoot {
 	background: $background2;
 	padding: 1em 0;
+	margin-top: 2em;
 }
 
 #footer{
@@ -317,6 +334,18 @@ p.event-description{
 		color: rgb(218, 187, 90);
 	}
 	
+}
+fieldset legend {
+	background: none;
+	font-family: TrendSlabOne, 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+	font-size: 1.6875em;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	span {
+		display: block;
+		float: right;
+		font-size: .7em;
+	}
 }
 
 @media only screen and (min-width: 30em) and (max-width: 48em){
